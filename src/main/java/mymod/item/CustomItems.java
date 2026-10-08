@@ -15,6 +15,7 @@ import java.util.function.Function;
 public class CustomItems {
 
     public static final Item SAPPHIRE = registerItem("sapphire", Item::new);
+    public static final Item RUBY = registerItem("ruby", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MyMod.MOD_ID, name),
@@ -28,6 +29,7 @@ public class CustomItems {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(SAPPHIRE);
+            output.accept(RUBY);
         });
     }
 

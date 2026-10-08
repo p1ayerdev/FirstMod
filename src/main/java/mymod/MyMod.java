@@ -1,5 +1,6 @@
 package mymod;
 
+import mymod.gemstab.ModCreativeModeTabs;
 import mymod.item.CustomItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,7 @@ public class MyMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		CustomItems.registerModItems();
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 	}
 
 	public static Identifier id(String path) {
