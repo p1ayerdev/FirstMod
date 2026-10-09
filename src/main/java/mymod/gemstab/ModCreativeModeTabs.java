@@ -1,6 +1,7 @@
 package mymod.gemstab;
 
 import mymod.MyMod;
+import mymod.block.ModBlocks;
 import mymod.item.CustomItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -21,6 +22,8 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(CustomItems.SAPPHIRE);
                         output.accept(CustomItems.RUBY);
+                        output.accept(ModBlocks.RUBY_BLOCK);
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK);
 
 
                     }).build());

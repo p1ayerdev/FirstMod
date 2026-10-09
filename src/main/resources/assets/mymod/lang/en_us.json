@@ -1,5 +1,7 @@
 {
   "item.mymod.sapphire": "Sapphire",
   "item.mymod.ruby": "Ruby",
+  "block.mymod.ruby_block": "Ruby Block",
+  "block.mymod.sapphire_block": "Sapphire Block",
   "creativemodetab.mymod.gems": "Gems"
 }
