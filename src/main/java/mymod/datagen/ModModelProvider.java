@@ -15,8 +15,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createTrivialCube(ModBlocks.RUBY_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.TITANIUM_BLOCK);
 
     }
 
@@ -24,5 +26,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(CustomItems.SAPPHIRE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(CustomItems.RUBY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(CustomItems.TITANIUM_INGOT, ModelTemplates.FLAT_ITEM);
     }
 }

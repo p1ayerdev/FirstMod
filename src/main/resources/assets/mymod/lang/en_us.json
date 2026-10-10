@@ -1,7 +1,10 @@
 {
+  "creativemodetab.mymod.gems": "Gems",
   "item.mymod.sapphire": "Sapphire",
+  "block.mymod.sapphire_block": "Sapphire Block",
+  "block.mymod.ruby_ore": "Ruby Ore",
   "item.mymod.ruby": "Ruby",
   "block.mymod.ruby_block": "Ruby Block",
-  "block.mymod.sapphire_block": "Sapphire Block",
-  "creativemodetab.mymod.gems": "Gems"
+  "item.mymod.titanium_ingot": "Titanium Ingot",
+  "block.mymod.titanium_block": "Titanium Block"
 }

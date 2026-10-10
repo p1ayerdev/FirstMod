@@ -16,12 +16,19 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
+    public static final Block RUBY_ORE = registerBlock("ruby_ore",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MyMod.MOD_ID, name))));

@@ -21,9 +21,12 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.mymod.gems"))
                     .displayItems((parameters, output) -> {
                         output.accept(CustomItems.SAPPHIRE);
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK);
+                        output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(CustomItems.RUBY);
                         output.accept(ModBlocks.RUBY_BLOCK);
-                        output.accept(ModBlocks.SAPPHIRE_BLOCK);
+                        output.accept(CustomItems.TITANIUM_INGOT);
+                        output.accept(ModBlocks.TITANIUM_BLOCK);
 
 
                     }).build());
